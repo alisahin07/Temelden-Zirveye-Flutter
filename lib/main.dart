@@ -6,8 +6,13 @@ import 'package:flutter_full_learn/101/scaffold_learn.dart';
 import 'package:flutter_full_learn/101/text_learn.dart';
 
 import '101/button_learn.dart';
+import '101/card_learn.dart';
 import '101/color_learn.dart';
 import '101/icon_learn.dart';
+import '101/image_learn.dart';
+import '101/padding_learn.dart';
+import '101/stateless_learn.dart';
+import 'demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,12 +29,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         errorColor: ColorsItems.purchase,
         appBarTheme: AppBarTheme(
-            backgroundColor: Colors.red,
+            // backgroundColor: Colors.red,
             centerTitle: true,
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0),
       ),
-      home: ColorLearn(),
+      home: NoteDemos(),
     );
   }
 }
