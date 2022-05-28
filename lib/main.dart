@@ -8,11 +8,17 @@ import 'package:flutter_full_learn/101/text_learn.dart';
 import '101/button_learn.dart';
 import '101/card_learn.dart';
 import '101/color_learn.dart';
+import '101/column_row_learn.dart';
+import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/image_learn.dart';
+import '101/indicator_learn.dart';
+import '101/list_tile_learn.dart';
 import '101/padding_learn.dart';
+import '101/stack_learn.dart';
 import '101/stateless_learn.dart';
 import 'demos/note_demos_view.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +33,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
         errorColor: ColorsItems.purchase,
         appBarTheme: AppBarTheme(
             // backgroundColor: Colors.red,
@@ -34,7 +41,7 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0),
       ),
-      home: NoteDemos(),
+      home: StackDemoView(),
     );
   }
 }
